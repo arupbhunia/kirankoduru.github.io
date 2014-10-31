@@ -197,6 +197,16 @@
     margin-bottom: $spacing-unit;
 }
 
+.col-left {
+    width: $col-left-width;
+    float: left;
+}
+
+.col-right {
+    width: $col-right-width;
+    float: right;
+}
+
 .post-title {
     font-size: 42px;
     letter-spacing: -1px;

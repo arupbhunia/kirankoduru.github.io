@@ -47,7 +47,7 @@ discovery:
 
 Once we are done with the configurations we had to setup our security groups for the EC2 instances. This was the most crucial part for us to figure out since we cared about every port that we left open. Since we had launched our instances in a __VPC__ we only had a new different changes from instances that are not in __VPCs__. Here are the connections we used.
 
-+ Inbound
++ Inbound : TODO
 
 | Type  		| Protocol  | Port Range  | Source  |
 |:--------------|:----------|:------------|:--------|
