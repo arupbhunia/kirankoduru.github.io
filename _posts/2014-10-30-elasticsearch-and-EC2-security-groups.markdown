@@ -47,8 +47,22 @@ discovery:
 
 Once we are done with the configurations we had to setup our security groups for the EC2 instances. This was the most crucial part for us to figure out since we cared about every port that we left open. Since we had launched our instances in a __VPC__ we only had a new different changes from instances that are not in __VPCs__. Here are the connections we used.
 
-+ Inbound : TODO
+__Inbound connections__ for your security group
+
 
 | Type  		| Protocol  | Port Range  | Source  |
-|:--------------|:----------|:------------|:--------|
-|Custom TCP Rule| Custom TCP Rule|Custom TCP Rule|Custom TCP Rule|
+|:--------------|:----------:|:------------:|--------:|
+|SSH| TCP|22|[your-ip-address]|
+|HTTP| TCP|80|0.0.0.0|
+|HTTPS| TCP|443|0.0.0.0|
+|Custom TCP Rule| TCP|9200|[elasticsearch-security-group]|
+|Custom TCP Rule| TCP|9300|[elasticsearch-security-group]|
+  
+__Outbound connections__ for your security group
+
+| Type          | Protocol  | Port Range  | Source  |
+|:--------------|:----------:|:------------:|--------:|
+|HTTP| TCP|80|0.0.0.0|
+|HTTPS| TCP|443|0.0.0.0|
+|Custom TCP Rule| TCP|9200|[elasticsearch-security-group]|
+|Custom TCP Rule| TCP|9300|[elasticsearch-security-group]|

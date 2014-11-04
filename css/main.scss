@@ -23,7 +23,7 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 $on-palm:          600px;
 $on-laptop:        800px;
-$col-left-width:   10%;
+$col-left-width:   8%;
 $col-right-width:  90%;
 
 @mixin media-query($device) {
