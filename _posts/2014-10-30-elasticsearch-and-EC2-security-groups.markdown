@@ -66,3 +66,5 @@ __Outbound connections__ for your security group
 |HTTPS| TCP|443|0.0.0.0|
 |Custom TCP Rule| TCP|9200|[elasticsearch-security-group]|
 |Custom TCP Rule| TCP|9300|[elasticsearch-security-group]|
+
+Next just run your elasticsearch servers individually and they will be able to detect eachother.
