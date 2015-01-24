@@ -85,4 +85,4 @@ reactor.run()
 
 You can also add a pipeline to insert the item into your database by using the `ITEMS_PIPELINE` in the scrapy settings. I will illustrate that in my next blog post and also how you will be able to run 2 spiders parallely.
 
-[Download Project](https://github.com/kirankoduru/scrapy-programmatically/archive/master.zip) | [View on github](https://github.com/kirankoduru/scrapy-programmatically)
+[Download Project](https://github.com/kirankoduru/scrapy-programmatically/archive/master.zip) or [View on github](https://github.com/kirankoduru/scrapy-programmatically)
