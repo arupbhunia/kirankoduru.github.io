@@ -2,22 +2,25 @@
 layout: default
 ---
 <div class="post">
-
-  <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">
       {{ page.date | date: "%b %-d, %Y" }}
       {% if page.author %} • {{ page.author }}{% endif %}
       {% if page.meta %} • {{ page.meta }}{% endif %}
     </p>
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
+  <header class="post-header">
   </header>
-  <div class="col-left"><img src="https://avatars3.githubusercontent.com/u/703650?v=2&s=50"/></div>
+  <div class="col-left">
+      <img src="https://avatars3.githubusercontent.com/u/703650?v=2&s=50"/><br><br>
+  </div>
   <article class="post-content col-right">
     {{ content }}
   </article>
 
 </div>
-
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -31,4 +34,17 @@ layout: default
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<!-- Share this -->
+<script type="text/javascript">stLight.options({publisher: "437ed7dc-90d5-41f8-b68a-2d8bd8f87ff0", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+<script>
+var options={ "publisher": "437ed7dc-90d5-41f8-b68a-2d8bd8f87ff0", 
+              "position": "right", 
+              "ad": { "visible": false, 
+                      "openDelay": 5, 
+                      "closeDelay": 0}, 
+              "displayText" : false,
+              "chicklets": { "items": ["facebook", "twitter", "googleplus", "reddit", "email", "sharethis"]}};
+var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
+</script>
 
