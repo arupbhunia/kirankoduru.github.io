@@ -1,0 +1,53 @@
+---
+# custom css
+---
+
+.home {
+	.col-left{
+		width: 65%;
+		float:left;
+	}
+
+	.col-right{
+		width:30%;
+		float:right;
+		background: url('../img/pattern.png') repeat #EEEEEE;
+		padding:7px;
+		margin-top:10px;
+
+		.input-form{
+			background: #ADADAD;
+			padding:2px;
+			
+			input[type='text']{
+				width:66%;
+				margin-top: 1px;
+				float:left;
+			}	
+			input[type='submit']{
+				font-size: 10px;
+				background:none;
+				border:none;
+				color:#FCFCFC;
+				text-transform: uppercase;
+			}
+		}
+		
+
+		.header{
+			color:#000;
+			text-transform: uppercase;
+			font-family: serif;
+		}
+
+		.message{
+			margin-top: 5px;
+			font-size: 12px;
+			font-family: serif;
+		}
+
+	}
+	.clear-fix{
+		clear:both;
+	}
+}

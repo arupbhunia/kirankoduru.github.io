@@ -3,15 +3,8 @@ layout: default
 ---
 
 <div class="home">
-  <form style="position:absolute; top:9%; right:15%;background: #555; padding:10px"
-        action="https://feedburner.google.com/fb/a/mailverify"
-        method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=kirankoduru', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
-        <input placeholder="Subscribe via email" type="text" style="width:140px" name="email"/>
-        <input type="hidden" value="kirankoduru" name="uri"/>
-        <input type="hidden" name="loc" value="en_US"/>
-        <input type="submit" value="Subscribe" />
-  </form>
-  <ul class="post-list">
+  <div class="col-left">
+    <ul class="post-list">
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -20,9 +13,26 @@ layout: default
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h3>
         <p>
-          {{ post.description }}
+          {{ post.excerpt }}
         </p>
+        <a href="{{ post.url | prepend: site.baseurl }}">Read More...</a>
       </li>
     {% endfor %}
-  </ul>
+    </ul>  
+  </div>
+  <div class="subscribe-form col-right">
+    <div class="header">Subscribe</div>
+    <div class="input-form">
+      <form action="https://feedburner.google.com/fb/a/mailverify"
+          method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=kirankoduru', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+      <input type="text" name="email"/>
+      <input type="hidden" value="kirankoduru" name="uri"/>
+      <input type="hidden" name="loc" value="en_US"/>
+      <input type="submit" value="Subscribe" />
+      </form>
+    </div>
+    <div class="message"><i>Enter email to receive updates about all the best things I like working on.</i></div>
+  </div>
+  <div class="clear-fix"></div>
+  
 </div>
