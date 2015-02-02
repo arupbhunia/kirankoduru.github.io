@@ -6,6 +6,12 @@
 	.col-left{
 		width: 65%;
 		float:left;
+
+		.post-list{
+			h3 {
+			 margin-bottom:0px;
+			}
+		}
 	}
 
 	.col-right{
