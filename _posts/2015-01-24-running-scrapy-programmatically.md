@@ -83,6 +83,6 @@ crawler.start()
 reactor.run()
 {% endhighlight %}
 
-You can also add a pipeline to insert the item into your database by using the `ITEMS_PIPELINE` in the scrapy settings. I will illustrate that in my next blog post and also how you will be able to run 2 spiders parallely.
+You can also add a pipeline to insert the item into your database by using the `ITEMS_PIPELINE` in the scrapy settings. I will illustrate that in my next blog post and also how you will be able to run 2 spiders parallely [here](../python/multiple-scrapy-spiders.html).
 
-[Download Project](https://github.com/kirankoduru/scrapy-programmatically/archive/master.zip) or [View on github](https://github.com/kirankoduru/scrapy-programmatically)
+[Download Project](https://github.com/kirankoduru/scrapy-programmatically/archive/7ae412cfd00968150fcd0aa847949c15df6c8c39.zip) or [View on github](https://github.com/kirankoduru/scrapy-programmatically/tree/7ae412cfd00968150fcd0aa847949c15df6c8c39)
