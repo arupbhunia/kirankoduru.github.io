@@ -6,7 +6,7 @@ categories: python
 description : Running multiple spiders from a script programmatically
 ---
 
-This is a continuation of my [last post](../python/running-scrapy-programmatically.html) about how to run scrapers from a python script. In this post I will be writing about how to manage 2 spiders. You can run over 30 spiders concurrently using this script.
+This is a continuation of my [last post](http://kirankoduru.github.io/python/running-scrapy-programmatically.html) about how to run scrapers from a python script. In this post I will be writing about how to manage 2 spiders. You can run over 30 spiders concurrently using this script.
 
 Right now, this is how I have organise my project.
 {% highlight bash %}

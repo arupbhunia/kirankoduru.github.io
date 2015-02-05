@@ -3,7 +3,7 @@ layout: post
 title:  "Running scrapy spider programmatically"
 date:   2015-01-24 13:00:18
 categories: python
-description : My idea for running a scrapy spider programmatically.
+excerpt : My idea for running a scrapy spider programmatically.
 ---
 This is my first post this year, so __Happy New Year !__
 
@@ -83,6 +83,6 @@ crawler.start()
 reactor.run()
 {% endhighlight %}
 
-You can also add a pipeline to insert the item into your database by using the `ITEMS_PIPELINE` in the scrapy settings. I will illustrate that in my next blog post and also how you will be able to run 2 spiders parallely [here](../python/multiple-scrapy-spiders.html).
+You can also add a pipeline to insert the item into your database by using the `ITEMS_PIPELINE` in the scrapy settings. I will illustrate that in my next blog post and also how you will be able to run 2 spiders parallely [here](http://kirankoduru.github.io/python/multiple-scrapy-spiders.html).
 
 [Download Project](https://github.com/kirankoduru/scrapy-programmatically/archive/7ae412cfd00968150fcd0aa847949c15df6c8c39.zip) or [View on github](https://github.com/kirankoduru/scrapy-programmatically/tree/7ae412cfd00968150fcd0aa847949c15df6c8c39)
