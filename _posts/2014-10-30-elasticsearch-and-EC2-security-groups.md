@@ -9,14 +9,14 @@ Elasticsearch has taught me so much about text searching. It has been a love-hat
 
 We started off with 3 m1.small EC2 instances from Amazon. We had been running elasticsearch v.1.2.1 before on these machines but hey ! there was a new upgrade. So we installed v1.3.x through [yum](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/setup-repositories.html#_yum). Once we had that going, we had to install the [elasticsearch-cloud-aws](https://github.com/elasticsearch/elasticsearch-cloud-aws) plugin. You can have to navigate to the installed elasticsearch directory and run these commands. We had v.1.3.x installed so we had to get the v2.3.0 plugin. You can checkout the github repo for the right version to use with your elasticsearch installation. 
 
-```bash
+{% highlight bash %}
 $ cd /usr/share/elasticsearch/
 $ bin/plugin -install elasticsearch/elasticsearch-cloud-aws/2.4.0
-```
+{% endhighlight %}
 
 Next was to setup the `elasticsearch.yml` file. The config file can be usually found at `/etc/elasticsearch/elasticsearch.yml`. These are the settings we used for the master and slaves nodes were almost the same, except we had to set the value of the `node > master` to `true` or `false` accordingly. 
 
-```yml
+```
 cluster.name: marvel_universe
 
 cloud:
@@ -42,7 +42,6 @@ discovery:
     ec2:
         tag:
             clustername: marvel_universe
-
 ```
 
 Once we are done with the configurations we had to setup our security groups for the EC2 instances. This was the most crucial part for us to figure out since we cared about every port that we left open. Since we had launched our instances in a __VPC__ we only had a new different changes from instances that are not in __VPCs__. Here are the connections we used.
@@ -50,7 +49,7 @@ Once we are done with the configurations we had to setup our security groups for
 __Inbound connections__ for your security group
 
 
-| Type  		| Protocol  | Port Range  | Source  |
+| Type          | Protocol  | Port Range  | Source  |
 |:--------------|:----------:|:------------:|--------:|
 |SSH| TCP|22|[your-ip-address]|
 |HTTP| TCP|80|0.0.0.0|
