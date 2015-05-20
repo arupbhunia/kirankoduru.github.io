@@ -4,6 +4,9 @@ description: Programmer. Photographer. Beer Aficianado
 github_username:  kirankoduru
 paginate : 10
 
+url: http://kirankoduru.github.io
+baseurl: http://kirankoduru.github.io
+
 # Outputtin
 permalink: /:categories/:title.html
 
