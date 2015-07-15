@@ -2,18 +2,21 @@
 layout: default
 ---
 <div class="post">
-    <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">
-      {{ page.date | date: "%b %-d, %Y" }}
       {% if page.author %} • {{ page.author }}{% endif %}
       {% if page.meta %} • {{ page.meta }}{% endif %}
     </p>
   <header class="post-header">
   </header>
   <div class="col-left">
-      <img src="https://avatars3.githubusercontent.com/u/703650?v=2&s=50"/><br><br>
+      <div class="text-right">
+        <img src="https://avatars3.githubusercontent.com/u/703650?v=2&s=50"/><br><br>
+        <b>Published</b><br>
+        {{ page.date | date: "%b %-d, %Y" }}
+      </div>
   </div>
   <article class="post-content col-right">
+    <h1 class="post-title">{{ page.title }}</h1>
     {{ content }}
   </article>
 
