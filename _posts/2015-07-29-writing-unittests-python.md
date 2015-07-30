@@ -8,15 +8,15 @@ description : Learn to write a unit test in python
 A good developer always tests his code. And python being a robust language is very easy to test. Heres a function that adds two numbers and returns their result.
 
 
-```python
+{% highlight python %}
 # filename: sum_num.py
 def sum(x, y):
     return x + y
-``` 
+{% endhighlight %}
 
 Now here is a test case that will test if your function returns the excepted result:
 
-```python 
+{% highlight python %}
 from unittest import TestCase
 
 class TestSum(TestCase):
@@ -30,7 +30,7 @@ class TestSum(TestCase):
         # check if the result is equal to expected result
         # here the result should be equal to 7.
         self.assertEquals(7, result)
-```
+{% endhighlight %}
 
 Thats it ! 
 
