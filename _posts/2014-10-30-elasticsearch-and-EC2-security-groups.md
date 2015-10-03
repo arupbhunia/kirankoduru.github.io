@@ -5,6 +5,8 @@ date:   2014-10-30 01:00:00
 categories: elasticsearch
 description : How we spent 3 hours trying to configure a 3 node cluster, and now I want to save you some time.
 ---
+_Update: On 1 October, 2015 AWS released their elasticsearch service to make it easier to configure elasticsearch on EC2. I recommend checking it out_
+
 Elasticsearch has taught me so much about text searching. It has been a love-hate relationship since I started using it. Though I still consider myself a newbie, but the struggle has taught me how crucial it is to index my data the right way. Mapping it correctly, using the right analyzers on the right fields. This post isn't about how great elasticsearch is but, about how there is so little to almost no documentation about setting up a elasticsearch cluster on EC2.
 
 We started off with 3 m1.small EC2 instances from Amazon. We had been running elasticsearch v.1.2.1 before on these machines but hey ! there was a new upgrade. So we installed v1.3.x through [yum](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/setup-repositories.html#_yum). Once we had that going, we had to install the [elasticsearch-cloud-aws](https://github.com/elasticsearch/elasticsearch-cloud-aws) plugin. You can have to navigate to the installed elasticsearch directory and run these commands. We had v.1.3.x installed so we had to get the v2.3.0 plugin. You can checkout the github repo for the right version to use with your elasticsearch installation. 
