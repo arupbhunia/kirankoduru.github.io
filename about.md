@@ -21,7 +21,7 @@ You can checkout __Arachne__ on [github](https://github.com/kirankoduru/arachne)
 <hr><br/>
 
 #### Relase Master
-When you need to create a _CHANGELOG_ for your projects from previous _git_ commits. A work in progress project that makes it easier to just do that.
+When you need to create a _CHANGELOG_ for your projects from previous _git_ commits. A work in progress project that makes it easier to do just that.
 <a href="https://github.com/kirankoduru/release-master">
 ![Release Master - CHANGELOG from git commits]({{ site.baseurl }}/img/side-projects/release-master.png)
 </a>
@@ -39,8 +39,10 @@ You can checkout __Stayin' Inline__ on [github](https://github.com/kirankoduru/s
 <hr><br/>
 
 #### NYC Free WiFi
-From all the open data sources that the NYC government provides, one of the data set is the free WiFi locations in NYC. This map give you an idea of all the closest free WiFi around you in NYC. 
+From all the open data sources that the NYC government provides, one of the data set is the free WiFi locations in NYC. This map give you an idea of all the closest free WiFi around you in NYC.
+<br/>
 <a href="https://github.com/kirankoduru/nycwifi">
 ![NYC WiFi - Free WiFi locations around you in NYC]({{ site.baseurl }}/img/nycwifi.jpg)
 </a>
+<br/>
 You can checkout __NYC Free WiFi__ on [github](https://github.com/kirankoduru/nycwifi) or the live version [here](http://kirankoduru.github.io/nycwifi/).
