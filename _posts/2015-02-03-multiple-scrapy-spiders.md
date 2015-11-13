@@ -73,6 +73,6 @@ reactor.run()
 
 My little hack here is to make a list of `RUNNING_CRAWLERS` and on the spider `signal_closed`, which is sent by the spider when it stops I remove them from the `RUNNING_CRAWLERS` list. And finally when there are no more spiders in the `RUNNING_CRAWLERS`, we stop the script.
 
-Do wait for my last post in this series about how to implement the scrapy pipeline to insert items into your database.
+You can view my last post in this series about how to implement the scrapy pipeline to insert items into your database [here](http://kirankoduru.github.io/python/sqlalchemy-pipeline-scrapy.html).
 
 [Download Project](https://github.com/kirankoduru/scrapy-programmatically/archive/487311b2e48a5c4e712237f61e9a97ff1540ddb2.zip) or [View on github](https://github.com/kirankoduru/scrapy-programmatically/tree/487311b2e48a5c4e712237f61e9a97ff1540ddb2)
