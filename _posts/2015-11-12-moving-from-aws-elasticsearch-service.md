@@ -2,7 +2,7 @@
 layout: post
 title:  "Goodbye AWS elasticsearch service"
 date:   2015-11-12 23:49:03
-categories: python
+categories: elasticsearch
 description : Migrating from elasticsearch service by Amazon Web Services
 ---
 On October 1st 2015, AWS launced a new service for elasticsearch. At work, we have a ton of AWS credits and from past experiences setting up elasticsearch they got my attention. 
