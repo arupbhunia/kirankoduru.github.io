@@ -5,7 +5,6 @@ date:   2015-02-03 22:13:42
 categories: python
 description : Running multiple spiders from a script programmatically
 ---
-
 This is a continuation of my [last post](http://kirankoduru.github.io/python/running-scrapy-programmatically.html) about how to run scrapers from a python script. In this post I will be writing about how to manage 2 spiders. You can run over 30 spiders concurrently using this script.
 
 Right now, this is how I have organise my project.
@@ -76,3 +75,7 @@ My little hack here is to make a list of `RUNNING_CRAWLERS` and on the spider `s
 You can view my last post in this series about how to implement the scrapy pipeline to insert items into your database [here](http://kirankoduru.github.io/python/sqlalchemy-pipeline-scrapy.html).
 
 [Download Project](https://github.com/kirankoduru/scrapy-programmatically/archive/487311b2e48a5c4e712237f61e9a97ff1540ddb2.zip) or [View on github](https://github.com/kirankoduru/scrapy-programmatically/tree/487311b2e48a5c4e712237f61e9a97ff1540ddb2)
+
+<div class="note">
+    This blog post series received a lot of attention so I created a pip package to make it easy to run your scrapy spiders. Please check the project on <a href="http://github.com/kirankoduru/arachne">github</a>.
+</div>

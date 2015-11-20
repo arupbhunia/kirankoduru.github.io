@@ -5,7 +5,6 @@ date:   2015-02-04 22:42:46
 categories: python
 description : Scrapy pipelines for inserting item into the database.
 ---
-
 In my [last post](http://kirankoduru.github.io/python/multiple-scrapy-spiders.html), I talked about how to run 2 spiders concurrently. This post is a brief introduction to how to add scrapy items into database through the pipeline.
 
 The scrapy framework is magnificient when it comes to data processing. There are tons of features that it uses and lets developers configure. Since we are using the core API to run our scrapers right now, we are able to set the pipeline using
@@ -70,3 +69,7 @@ python core.py
 {% endhighlight %}
 
 [Download Project](https://github.com/kirankoduru/scrapy-programmatically/archive/0b20f674da3e263c134dff34171aa63d26fd5868.zip) or [View on github](https://github.com/kirankoduru/scrapy-programmatically/archive/0b20f674da3e263c134dff34171aa63d26fd5868)
+
+<div class="note">
+    This blog post series received a lot of attention so I created a pip package to make it easy to run your scrapy spiders. Please check the project on <a href="http://github.com/kirankoduru/arachne">github</a>.
+</div>
