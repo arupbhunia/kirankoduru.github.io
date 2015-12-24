@@ -14,7 +14,7 @@ So first you need to install the following python packages from pip.
 
 {% highlight bash %}
 pip install pylint
-pip install git-pylint-commit-hook
+pip install git-pylint-commit-hook==2.0.7
 {% endhighlight %}
 
 Next goto the git repository that you are working on and navigate to your __.git/hooks/__ directory. From the root directory of your project, run the following command to rename the __pre-commit.sample__ file to __pre-commit__
