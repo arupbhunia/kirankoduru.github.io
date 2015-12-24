@@ -16,7 +16,7 @@ Today, I am going to discuss about how to get started implementing a minimalisti
 #### Directory structure
 When writing a Flask app you will have a file to run your app, some html files in a __templates__ directory and some python code(_views.py_) that binds the app to your html file. To store the content of the website we will be using a sqlite database.
 
-```bash
+```
 .
 ├── app
 │   ├── __init__.py

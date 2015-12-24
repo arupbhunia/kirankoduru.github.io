@@ -66,27 +66,16 @@
 	text-align: right;
 }
 
-.post .col-left{
-	width: $col-left-width;
-    float: left;
-
-	@include media-query($on-palm) {
-		display: none;
-	}
-}
-
-.post .col-right{
-	width: $col-right-width;
-    float: right;
-	
-	@include media-query($on-palm) {
-		width: 100%;
-	}
-}
-
 .note {
 	padding:17px;
 	font-size:13px;
 	background: #FDE8C5;
 	margin:15px auto;
+}
+.text-gray {
+	color: #AAA;
+}
+
+.author{
+	color: #777;
 }
