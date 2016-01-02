@@ -5,7 +5,7 @@ date:   2015-12-21 21:23:23
 categories: python
 description : Using python functions with dictionaries
 ---
-Pro pythonistas will tell you that you should actually be using python with [higher order functions](http://learnyousomeerlang.com/higher-order-functions). Passing around functions are any programming languages greatest attribute. Here's a trick to making function calls using python dictionaries.
+Pro pythonistas will tell you that you should actually be using python with [higher order functions](http://learnyousomeerlang.com/higher-order-functions) & as [first class functions](https://en.wikipedia.org/wiki/First-class_function). Passing around functions are any programming languages greatest attribute. Here's a trick to making function calls using python dictionaries.
 
 Consider you have some functions `add`, `subtract`, `divide` and `multiply`. You could call these functions from a python dictionary like so:
 

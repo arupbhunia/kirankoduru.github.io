@@ -14,7 +14,22 @@ layout: default
     {{ content }}
   </article>
 
+  <!-- SIGNUP FORM -->
+  <div class="signup-form">
+    <h2>Like to stay in touch?</h2>
+    <p><i>Sign Up to my newsletter to stay updated on my journey with python, elasticsearch, javascript and other technologies. Promise I won't spam.</i></p>
+    <div class="input-form">
+      <form action="https://feedburner.google.com/fb/a/mailverify"
+          method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=kirankoduru', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+      <input type="text" name="email" placeholder="Please enter your email address"/>
+      <input type="hidden" value="kirankoduru" name="uri"/>
+      <input type="hidden" name="loc" value="en_US"/>
+      <input class="button" type="submit" value="Sign Up To Newsletter" />
+      </form>
+    </div>
+  </div>
 </div>
+
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
