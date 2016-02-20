@@ -5,7 +5,7 @@ layout: default
 <div class="home">
   <div class="col-left">
     <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <li>
         <h3>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -17,7 +17,23 @@ layout: default
         <a href="{{ post.url | prepend: site.baseurl }}">Read More...</a>
       </li>
     {% endfor %}
-    </ul>  
+    </ul>
+
+    <!-- Pagination links -->
+    <div class="pagination">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+      {% else %}
+        <span class="previous">Previous</span>
+      {% endif %}
+      <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+      {% else %}
+        <span class="next ">Next</span>
+      {% endif %}
+    </div>  
+
   </div>
   <div class="subscribe-form col-right">
     <div class="header">Subscribe</div>
@@ -31,6 +47,18 @@ layout: default
       </form>
     </div>
     <div class="message"><i>Sign Up to my newsletter to stay updated on my journey with python, elasticsearch, javascript and other technologies.</i></div>
+    <div class="gads">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- All Ads -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-5492303335131929"
+           data-ad-slot="1119406495"
+           data-ad-format="auto"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
   </div>
   <div class="clear-fix"></div>
   

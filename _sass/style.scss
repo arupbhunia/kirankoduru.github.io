@@ -131,3 +131,19 @@
 
 	}
 }
+
+.pagination {
+	border-top:1px solid #CCC;
+	padding-top:10px;
+	color: #777;
+	
+	.previous {
+		float: left;
+	}
+	.page_number {
+		margin-left: 30%;
+	}
+	.next {
+		float:right;
+	}
+}
