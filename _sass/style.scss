@@ -136,7 +136,7 @@
 	border-top:1px solid #CCC;
 	padding-top:10px;
 	color: #777;
-	
+
 	.previous {
 		float: left;
 	}
@@ -146,4 +146,8 @@
 	.next {
 		float:right;
 	}
+}
+
+.cursor.pointer{
+	cursor:pointer;
 }
