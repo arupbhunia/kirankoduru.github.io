@@ -9,8 +9,11 @@ I have been a full stack developer for a long time and have experience creating 
 
 These are some of the interesting side projects I worked on:
 
+#### ChangeLog Suggest
+Writing CHANGELOGs can be a grueling task but git logs can help you create a suggested CHANGELOG. The intention of this tool is to remove some of the grunt work involved checking diffs to write CHANGELOGs. You can view it on [github](https://github.com/kirankoduru/changelog) or [read the docs](http://changelog.readthedocs.io/en/latest/) or download it from [pip](https://pypi.python.org/pypi/changelog-suggest). 
+
 #### Arachne
-A tiny pip package to run your scrapy spiders from a Flask API. You can checkout __Arachne__ on [github](https://github.com/kirankoduru/arachne) or [read the docs](http://arachne.readthedocs.org/en/latest/) or install through pip.
+A tiny pip package to run your scrapy spiders from a Flask API. You can checkout __Arachne__ on [github](https://github.com/kirankoduru/arachne) or [read the docs](http://arachne.readthedocs.org/en/latest/) or install through [pip](https://pypi.python.org/pypi/Arachne).
 
 #### NYC Free WiFi
 From all the open data sources that the NYC government provides, one of the data set is the free WiFi locations in NYC. This map give you an idea of all the closest free WiFi around you in NYC. Checkout __NYC Free WiFi__ on [github](https://github.com/kirankoduru/nycwifi) or the live version [here](http://kirankoduru.github.io/nycwifi/).
