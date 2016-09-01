@@ -6,7 +6,7 @@ categories: software-engineering
 description : You should write a CHANGELOG
 ---
 
-Software engineering is not just able writing code, at times it includes documenting things that you never would have if it was your personal side project.
+Software engineering is not just about writing code, at times it includes documenting things that you never would have if it was your personal side project.
 
 Working with a StartUp I realized that it's important to communicate to your users and your team members about the changes that go out with each release. Thus, slowly began my phase of tagging each release. I use [semver](http://semver.org/) for all of my projects but you could choose to use any of the plethora of versioning [schemes](https://en.wikipedia.org/wiki/Software_versioning#Schemes) out there.
 
