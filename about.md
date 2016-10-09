@@ -1,6 +1,6 @@
 ---
-layout: page
-title: About me
+layout: about
+title: About
 permalink: /about/
 ---
 I work with a Startup in Brooklyn, NY. I am a fan of [/r/python](http://reddit.com/r/python) and [hacker news](https://news.ycombinator.com/). During weekends I work on side projects or take pictures of things.  

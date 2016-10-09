@@ -21,20 +21,23 @@ layout: default
 
     <!-- Pagination links -->
     <div class="pagination">
-      {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}" class="previous"><<</a>
-      {% else %}
-        <span class="previous"><<</span>
-      {% endif %}
-      &nbsp;&nbsp;
-      <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-      &nbsp;&nbsp;
-      {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" class="next">>></a>
-      {% else %}
-        <span class="next ">>></span>
-      {% endif %}
+      <span class="page-numbers">
+        <span>Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+      </span>
+      <span class="arrows">
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path }}" class="previous"><i class="fa fa-caret-left"></i></a>
+        {% else %}
+          <span class="previous"><i class="fa fa-caret-left"></i></span>
+        {% endif %}
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path }}" class="next"><i class="fa fa-caret-right"></i></a>
+        {% else %}
+          <span class="next "><i class="fa fa-caret-right"></i></span>
+        {% endif %}
+      </span>
     </div>  
+    <!-- /Pagination links -->
 
   </div>
   <div class="subscribe-form col-right">
