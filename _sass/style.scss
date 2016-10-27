@@ -153,3 +153,13 @@
 .cursor.pointer{
 	cursor:pointer;
 }
+
+#photography {
+	img {
+		float:left;
+		width: 90px;
+		height: 90px;
+		margin:0 7px;
+		border-radius:0; 
+	}
+}
