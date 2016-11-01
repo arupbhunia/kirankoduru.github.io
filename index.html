@@ -22,7 +22,22 @@ layout: default
     <!-- Pagination links -->
     <div class="pagination">
       <span class="page-numbers">
-        <span>Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+        <!-- post start number -->
+        {% if paginator.page > 1 %}
+          {% assign start_num = paginator.page | minus: 1 | times: paginator.per_page | plus: 1 %}
+        {% else %}
+          {% assign start_num = paginator.page %}
+        {% endif %}
+        
+        <!-- post end number -->
+        {% assign end_num = paginator.page|times:paginator.per_page %}
+        {% if end_num < paginator.total_posts %}
+          {% assign end_num = paginator.page|times:paginator.per_page %}
+        {% else %}
+          {% assign end_num = paginator.total_posts %}
+        {% endif %}
+
+        <span>Page: {{ paginator.page }} of {{ paginator.total_pages }} ({{ start_num }}-{{ end_num }} of {{ paginator.total_posts }})</span>
       </span>
       <span class="arrows">
         {% if paginator.previous_page %}
