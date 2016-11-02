@@ -4,6 +4,7 @@ title:  "SQL Alchemy pipeline to add item to DB"
 date:   2015-02-04 22:42:46
 categories: python
 description : Scrapy pipelines for inserting item into the database.
+note: This post refers to using scrapy version 0.24.4, if you are using a different version of scrapy then refer <a href="http://scrapy.readthedocs.org">scrapy docs</a> for more info.
 ---
 In my [last post](http://kirankoduru.github.io/python/multiple-scrapy-spiders.html), I talked about how to run 2 spiders concurrently. This post is a brief introduction to how to add scrapy items into database through the pipeline.
 
@@ -69,7 +70,3 @@ python core.py
 {% endhighlight %}
 
 [Download Project](https://github.com/kirankoduru/scrapy-programmatically/archive/0b20f674da3e263c134dff34171aa63d26fd5868.zip) or [View on github](https://github.com/kirankoduru/scrapy-programmatically/archive/0b20f674da3e263c134dff34171aa63d26fd5868)
-
-<div class="note">
-    This blog post series received a lot of attention so I created a pip package to make it easy to run your scrapy spiders. Please check the project on <a href="http://github.com/kirankoduru/arachne">github</a>.
-</div>

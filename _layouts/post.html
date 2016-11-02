@@ -3,14 +3,16 @@ layout: default
 ---
 <div class="post">
     <p class="post-meta">
-      {% if page.author %} • {{ page.author }}{% endif %}
-      {% if page.meta %} • {{ page.meta }}{% endif %}
     </p>
   <header class="post-header">
   </header>
   <article class="post-content">
     <h2 class="post-title">{{ page.title }}</h2>
-    <span class="text-gray"></b> {{ page.date | date: "%b %-d, %Y" }}</span><br><br>
+      
+    <span class="text-gray"></b>{% if page.author %}{{ page.author }}  •  {% endif %}{{ page.date | date: "%b %-d, %Y" }}</span><br><br>
+    {% if page.note %}
+    <div class="note">{{ page.note }}</div>
+    {% endif %}
     {{ content }}
   </article>
 
@@ -29,6 +31,7 @@ layout: default
     </div>
   </div>
 </div>
+
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">

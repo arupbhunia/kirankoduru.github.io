@@ -4,6 +4,7 @@ title:  "Running scrapy spider programmatically"
 date:   2015-01-24 13:00:18
 categories: python
 description : My idea for running a scrapy spider programmatically.
+note: This post refers to using scrapy version 0.24.4, if you are using a different version of scrapy then refer <a href="http://scrapy.readthedocs.org">scrapy docs</a> for more info. Also this blog post series received a lot of attention so I created a pip package to make it easy to run your scrapy spiders. Please check the project on <a href="http://github.com/kirankoduru/arachne">github</a>.
 ---
 I wanted to share something that I have been working on for the past few months, which is, running scrapers with the [scrapy](http://scrapy.org) framework. I understand that scrapy has existed for many years, but it is still so relevant and useful for me and my team. We were hooked to it and started reading the [docs](http://scrapy.readthedocs.org) daily on how to get it perfect. There are two ways of running a scrapy spider. You can run a scrapy spider from the command line or using a program.
 
@@ -84,7 +85,3 @@ reactor.run()
 You can also add a pipeline to insert the item into your database by using the `ITEMS_PIPELINE` in the scrapy settings. I will illustrate that in my next blog post and also how you will be able to run 2 spiders parallely [here](http://kirankoduru.github.io/python/multiple-scrapy-spiders.html).
 
 [Download Project](https://github.com/kirankoduru/scrapy-programmatically/archive/7ae412cfd00968150fcd0aa847949c15df6c8c39.zip) or [View on github](https://github.com/kirankoduru/scrapy-programmatically/tree/7ae412cfd00968150fcd0aa847949c15df6c8c39)
-
-<div class="note">
-    This blog post series received a lot of attention so I created a pip package to make it easy to run your scrapy spiders. Please check the project on <a href="http://github.com/kirankoduru/arachne">github</a>.
-</div>
