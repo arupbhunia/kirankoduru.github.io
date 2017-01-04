@@ -8,8 +8,19 @@ layout: default
   </header>
   <article class="post-content">
     <h2 class="post-title">{{ page.title }}</h2>
-      
-    <span class="text-gray"></b>{% if page.author %}{{ page.author }}  •  {% endif %}{{ page.date | date: "%b %-d, %Y" }}</span><br><br>
+    
+    <!-- CAPTURE READING TIME -->
+    {% capture words %}
+    {{ content | number_of_words | minus: 180 }}
+    {% endcapture %}
+    <!-- /CAPTURE READING TIME -->
+    
+    <span class="text-gray">{% if page.author %}{{ page.author }}  •  {% endif %}{{ page.date | date: "%b %-d, %Y" }}  •  
+    {% unless words contains "-" %}
+      {{ words | plus: 180 | divided_by: 180 | append: " minutes to read" }}
+    {% endunless %}
+
+    </span><br><br>
     {% if page.note %}
     <div class="note">{{ page.note }}</div>
     {% endif %}
@@ -18,15 +29,15 @@ layout: default
 
   <!-- SIGNUP FORM -->
   <div class="signup-form">
-    <h2>Like to stay in touch?</h2>
-    <p><i>Sign Up to my newsletter to stay updated on my journey with python, elasticsearch, javascript and other technologies. Promise I won't spam.</i></p>
+    <h2>Get posts like these delivered to our inbox</h2>
+    <p><i>Sign Up and subscribe to my ramblings on becoming a better programmer. Promise I won't spam. My posts will purely be tech related.</i></p>
     <div class="input-form">
       <form action="https://feedburner.google.com/fb/a/mailverify"
           method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=kirankoduru', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
       <input type="text" name="email" placeholder="Please enter your email address"/>
       <input type="hidden" value="kirankoduru" name="uri"/>
       <input type="hidden" name="loc" value="en_US"/>
-      <input class="button cursor pointer" type="submit" value="Sign Up To Newsletter" />
+      <input class="button cursor pointer" type="submit" value="Sign Up Now" />
       </form>
     </div>
   </div>
