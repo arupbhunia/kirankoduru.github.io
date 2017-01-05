@@ -2,6 +2,7 @@
 title: Musings of a programmer
 description: Programmer. Photographer. Beer Aficianado
 github_username:  kirankoduru
+author: Kiran Koduru
 paginate : 5
 
 paginate_path: "/:num/"
@@ -21,3 +22,4 @@ kramdown:
 gems:
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-seo-tag
