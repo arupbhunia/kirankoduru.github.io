@@ -4,7 +4,7 @@ title:  "Running multiple scrapy spiders programmatically"
 date:   2015-02-03 22:13:42
 categories: python
 description : Running multiple spiders from a script programmatically
-note: This post refers to using scrapy version 0.24.4, if you are using a different version of scrapy then refer <a href="http://scrapy.readthedocs.org">scrapy docs</a> for more info. Also this blog post series received a lot of attention so I created a pip package to make it easy to run your scrapy spiders. Please check the project on <a href="http://github.com/kirankoduru/arachne">github</a>.
+note: This post refers to using scrapy version 0.24.4, if you are using a different version of scrapy then refer <a href="https://doc.scrapy.org/en/latest/topics/practices.html#running-multiple-spiders-in-the-same-process">scrapy docs</a> for more info. Also this blog post series received a lot of attention so I created a pip package to make it easy to run your scrapy spiders. Please check the project on <a href="http://github.com/kirankoduru/arachne">github</a>.
 ---
 This is a continuation of my [last post](http://kirankoduru.github.io/python/running-scrapy-programmatically.html) about how to run scrapers from a python script. In this post I will be writing about how to manage 2 spiders. You can run over 30 spiders concurrently using this script.
 
