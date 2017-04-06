@@ -5,6 +5,7 @@ date:   2017-01-02 22:25:40
 categories: random
 description : Reviewing my accomplishments for the year 2016
 author: Kiran Koduru 
+image: /img/github-contrib-2016.png
 ---
 
 Welcome to the year 2017 everyone! I hope you had a good 2016. There are a lot of things that you might cherish about last year and some not so much but in the end, it is all about you being a better person than you were yesterday. 
@@ -14,8 +15,6 @@ On that same note, I wanted to reflect over some of the technical achievements a
 #### github contributions
 
 I spent a lot of time on pushing, merging pull requests and contributing to open source last year. Though most of my contributions were solely to private repositories, I did a lot better than last year. I had a __41 day streak__ in February and March. I took sometime off to see Canada in the end of April and then again in the end of November to see Thailand and India. I guess I did pretty good on work-life balance there.
-
-![Stayin inline]({{ site.url }}/img/github-contrib-2016.png)
 
 #### A year full of containers
 
