@@ -15,9 +15,9 @@ layout: default
     {% unless words contains "-" %}
       {{ words | plus: 180 | divided_by: 180 | append: " minutes to read" }}
     {% endunless %}
-
+    • Last Modified: {% last_modified_at %d %b, %Y %} 
     </span>
-    
+
     {% if page.image %}
     <div class="image">
       <img src="{{ page.image }}" width="740">
