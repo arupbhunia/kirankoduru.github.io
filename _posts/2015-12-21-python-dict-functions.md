@@ -66,7 +66,7 @@ operations = {
     'subtract': subtract
 }
 
-# add variables x & y
+# add variables x, y, z, p, q, r
 print operations['add'](x, y, z, p, q, r)
 # 155
 
