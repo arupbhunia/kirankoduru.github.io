@@ -6,8 +6,8 @@ author: Kiran Koduru
 paginate : 5
 
 paginate_path: "/:num/"
-url: 
-baseurl: https://kirankoduru.github.io
+url: https://kirankoduru.github.io
+baseurl: 
 
 # Outputtin
 permalink: /:categories/:title.html
