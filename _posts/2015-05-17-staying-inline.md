@@ -13,7 +13,7 @@ So here I present you a tool to move the style tags from the HTML to their inlin
 
 Paste the HTML of your email template in the left box and get the output with inline style attributes in the right. 
 <a href="http://kirankoduru.github.io/stayin-inline/">
-![Stayin inline]({{ site.baseurl }}/img/staying inline.png)
+![Stayin inline]({{ site.url }}/img/staying inline.png)
 </a>
 
 You can also checkout the source code on github [here](https://github.com/kirankoduru/stayin-inline). 
