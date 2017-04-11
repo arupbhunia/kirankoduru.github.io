@@ -2,6 +2,7 @@
 layout: post
 title:  "SQL Alchemy pipeline to add item to DB"
 date:   2015-02-04 22:42:46
+updated: 2017-10-31 23:36:00
 categories: python
 description : Scrapy pipelines for inserting item into the database.
 note: This post refers to using scrapy version 0.24.4, if you are using a different version of scrapy then refer <a href="http://scrapy.readthedocs.org">scrapy docs</a> for more info.

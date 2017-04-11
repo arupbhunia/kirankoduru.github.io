@@ -43,13 +43,13 @@ pip install nose2
 
 This is how my directory is structured:
 
-```bash
+<pre>
 .
 ├── sum_num.py
 └── tests
    ├── __init__.py
    └── test_sum_num.py
-```
+</pre>
 
 Now when you are in the root directory and run __nose2__ using the command line (command is `nose2`), it will check for all the files inside the __tests/__ directory and look for test cases that have file names that contain in it __test__ and have class names that have the name __Test__ and method names __test__. So this is how it will look like:
 

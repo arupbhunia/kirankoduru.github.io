@@ -16,7 +16,7 @@ If you have been watching closing at your scrapy console you will see a line tha
 
 Well, when you see the port that your spider is listening on then you can __telnet__ into your spider using the command line. The port I will telnet into is __6023__. 
 
-```bash
+<pre>
 telnet localhost 6023
 
 # this connects to the port 6023 and use the command prefs()
@@ -34,7 +34,8 @@ DmozSpider                          1   oldest:   6s ago
 CraigslistSpider                    1   oldest:   5s ago
 Request                          3000   oldest: 705s ago
 Selector                           14   oldest:   5s ago
-```
+</pre>
+
 
 Clearly, the issue is with one of my `Request` objects. Quickly going back to my code I saw that I used `yield Request` a lot which caused many objects to be created in memory. 
 

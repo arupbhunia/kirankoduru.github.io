@@ -2,6 +2,7 @@
 layout: post
 title:  "Minimalistic CMS blog with Flask"
 date:   2015-12-14 00:39:43
+updated:   2015-12-24 10:43:04
 categories: python
 description : Create a minimal CMS app using flask
 ---
@@ -16,7 +17,7 @@ Today, I am going to discuss about how to get started implementing a minimalisti
 #### Directory structure
 When writing a Flask app you will have a file to run your app, some html files in a __templates__ directory and some python code(_views.py_) that binds the app to your html file. To store the content of the website we will be using a sqlite database.
 
-```
+<pre>
 .
 ├── app
 │   ├── __init__.py
@@ -30,7 +31,7 @@ When writing a Flask app you will have a file to run your app, some html files i
 ├── cms.db  #sqlite database
 ├── requirements.txt
 └── runserver.py
-```
+</pre>
 
 #### Views
 

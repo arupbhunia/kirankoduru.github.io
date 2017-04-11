@@ -2,6 +2,7 @@
 layout: post
 title:  "pylint and git hook for pre-commit"
 date:   2014-11-13 00:40:00
+updated: 2015-12-24 12:42:07
 categories: python
 description : Pylinting your code even before it is committed
 ---

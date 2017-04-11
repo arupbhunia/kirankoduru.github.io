@@ -2,6 +2,7 @@
 layout: post
 title:  "Convert style tags to inline css for emails"
 date:   2015-05-17 22:40:12
+updated:   2017-04-23 13:41:22
 categories: javascript
 description : To parse style tags in your HTML add them as inline css.
 image: /img/staying inline.png
@@ -12,8 +13,5 @@ While working on some email templates last week I had a nightmare styling HTML f
 So here I present you a tool to move the style tags from the HTML to their inline equivalents. 
 
 Paste the HTML of your email template in the left box and get the output with inline style attributes in the right. 
-<a href="http://kirankoduru.github.io/stayin-inline/">
-![Stayin inline]({{ site.url }}/img/staying inline.png)
-</a>
 
 You can also checkout the source code on github [here](https://github.com/kirankoduru/stayin-inline). 

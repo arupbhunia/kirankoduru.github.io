@@ -2,6 +2,7 @@
 layout: post
 title:  "Python functions as dictionary values"
 date:   2015-12-21 21:23:23
+updated: 2017-1-24 11:31:11  
 categories: python
 description : Using python functions with dictionaries
 ---

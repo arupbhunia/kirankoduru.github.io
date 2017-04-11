@@ -11,10 +11,13 @@ layout: default
     {% endcapture %}
     <!-- /CAPTURE READING TIME -->
     
-    <span class="text-gray">{% if page.author %}{{ page.author }}  •  {% endif %}{{ page.date | date: "%b %-d, %Y" }}  •  
+    <span class="text-gray">{% if page.author %}{{ page.author }}  •  {% endif %}{{ page.date | date: "%b %-d, %Y" }}   
     {% unless words contains "-" %}
-      {{ words | plus: 180 | divided_by: 180 | append: " minutes to read" }}
+       • {{ words | plus: 180 | divided_by: 180 | append: " minutes to read" }}
     {% endunless %}
+    {% if page.updated %}
+      •  Last Updated: {{ page.updated | date: "%b %-d, %Y"}}
+    {% endif %}
     </span>
 
     {% if page.image %}

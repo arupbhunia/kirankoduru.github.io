@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Setup private git repository on EC2"
+title:  "Deploy your project with a git push on your server"
 date:   2015-02-11 20:38:09
+updated: 2017-04-09 15:11:55
 categories: git
 description : Setup git for your Linux server
 ---

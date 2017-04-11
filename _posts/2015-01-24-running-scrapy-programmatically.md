@@ -2,6 +2,7 @@
 layout: post
 title:  "Running scrapy spider programmatically"
 date:   2015-01-24 13:00:18
+updated: 2017-04-09 15:03:12
 categories: python
 description : My idea for running a scrapy spider programmatically.
 note: This post refers to using scrapy version 0.24.4, if you are using a different version of scrapy then refer <a href="https://doc.scrapy.org/en/latest/topics/practices.html#running-multiple-spiders-in-the-same-process">scrapy docs</a> for more info. Also this blog post series received a lot of attention so I created a pip package to make it easy to run your scrapy spiders. Please check the project on <a href="http://github.com/kirankoduru/arachne">github</a>.
@@ -50,9 +51,7 @@ class DmozSpider(scrapy.Spider):
 
 To be able to run this spider solely from scrapy core script:
 {% highlight python %}
-from DmozSpider import DmozSpider
-
-# scrapy api
+# import dmoz spider class
 from DmozSpider import DmozSpider
 
 # scrapy api
