@@ -3,7 +3,7 @@ layout: post
 title:  "Pylinting with PyCharm"
 date:   2017-05-06 15:03:15
 categories: python
-description : Pylinting with PyCharm
+description : A how to guide on getting started with pylint on PyCharm 
 author: Kiran Koduru
 image: /img/pycharm-pylinter.jpg
 ---
