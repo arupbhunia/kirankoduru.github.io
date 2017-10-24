@@ -4,6 +4,12 @@ layout: default
 <div class="post">
 
   <article class="post-content">
+   
+    <h2 class="post-title">{{ page.title }}</h2>
+
+    {% if page.note %}
+    <div class="note">{{ page.note }}</div>
+    {% endif %}
 
     <!-- CAPTURE READING TIME -->
     {% capture words %}
@@ -26,10 +32,6 @@ layout: default
     </div>
     {% endif %}
 
-    <h2 class="post-title">{{ page.title }}</h2>
-    {% if page.note %}
-    <div class="note">{{ page.note }}</div>
-    {% endif %}
     {{ content }}
   </article>
 

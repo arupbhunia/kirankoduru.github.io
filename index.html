@@ -14,7 +14,7 @@ layout: default
         <p>
           {{ post.excerpt | strip_html }}
         </p>
-        <a href="{{ post.url | prepend: site.url }}">Read More...</a>
+        <a class="text-gray" href="{{ post.url | prepend: site.url }}">Continue Reading...</a>
       </li>
     {% endfor %}
     </ul>
