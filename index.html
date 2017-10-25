@@ -8,9 +8,17 @@ layout: default
     {% for post in paginator.posts %}
       <li>
         <h3>
-          <a class="post-link" href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
+          <a class="post-link" href="{{ post.url | prepend: site.url }}" title="{{ post.title }}">{{ post.title | truncate: 47 }}</a>
         </h3>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        {% if post.image %}
+        <p></p>
+        <p>
+          <a class="post-image" href="{{ post.url | prepend: site.url }}" title="{{ post.title }}">
+            <img src="{{ post.image }}">
+          </a>
+        </p>
+        {% endif %}
         <p>
           {{ post.excerpt | strip_html }}
         </p>

@@ -5,6 +5,7 @@ date:   2015-12-14 00:39:43
 updated:   2015-12-24 10:43:04
 categories: python
 description : Create a minimal CMS app using flask
+image: /img/flask-cms-demo.gif
 ---
 When I started writing this post, I was going to name it _Writing a minimal Flask CMS app in 10 minutes_, and an hour later I changed my mind. 
 

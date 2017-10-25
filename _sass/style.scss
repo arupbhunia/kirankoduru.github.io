@@ -12,6 +12,10 @@
 			}
 		}
 
+		.post-image img{
+			border: 1px solid #EFEFEF;
+		}
+
 		@include media-query($on-palm) {
 			width: 100%;
 		}

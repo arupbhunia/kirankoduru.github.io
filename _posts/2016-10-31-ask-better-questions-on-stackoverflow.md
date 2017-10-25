@@ -5,7 +5,8 @@ date:   2016-10-31 20:52:23
 categories: software-engineering
 description : How to write better stackoverflow questions
 note: This is an opinion piece so if you have any suggestions/requests please go ahead and add them in the comments below.
-author: Kiran Koduru 
+author: Kiran Koduru
+image: /img/asking-question-on-so.jpg
 ---
 If you are not aware of stackoverflow then here's a short description: a collaborative place for programmers answering questions that other programmers encounter. This post is kind of a checklist when posting questions on stackoverflow.
 
