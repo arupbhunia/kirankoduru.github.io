@@ -2,6 +2,7 @@
 layout: post
 title:  "Debugging scrapy memory leaks"
 date:   2015-07-20 19:22:22
+updated: 2017-10-25 18:40:57
 categories: python
 description : How do you debug scrapy's memory leak?
 ---
@@ -40,3 +41,5 @@ Selector                           14   oldest:   5s ago
 Clearly, the issue is with one of my `Request` objects. Quickly going back to my code I saw that I used `yield Request` a lot which caused many objects to be created in memory. 
 
 Tell me how you solved your memory leaks with Scrapy in the comments below or post a question below if you would like help debugging your spiders.
+
+{% include scrapybook.html %}

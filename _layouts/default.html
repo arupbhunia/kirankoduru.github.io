@@ -25,14 +25,21 @@
     ga('create', 'UA-13022600-6', 'auto');
     ga('send', 'pageview');
 
+    // email
     $('.input-form input[type="submit"]').click(function(){
       ga('send', 'event', 'Subscription Form');
+    });
+
+    // book
+    $('.scrapy-book a').click(function(){
+      ga('send', 'event', 'Scrapy Book');
     });
 
     // add links to headers
     $('.h2,h3,h4,h5,h6').filter('[id]').each(function () {
         $(this).html($(this).text()+'&nbsp;&nbsp;&nbsp;<a href="#'+$(this).attr('id')+'">¶</a>');
     });
+
 
   </script>
 </html>
