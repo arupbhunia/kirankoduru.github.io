@@ -71,5 +71,3 @@ python core.py
 {% endhighlight %}
 
 [Download Project](https://github.com/kirankoduru/scrapy-programmatically/archive/0b20f674da3e263c134dff34171aa63d26fd5868.zip) or [View on github](https://github.com/kirankoduru/scrapy-programmatically/archive/0b20f674da3e263c134dff34171aa63d26fd5868)
-
-{% include scrapybook.html %}

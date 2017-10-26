@@ -30,11 +30,6 @@
       ga('send', 'event', 'Subscription Form');
     });
 
-    // book
-    $('.scrapy-book a').click(function(){
-      ga('send', 'event', 'Scrapy Book');
-    });
-
     // add links to headers
     $('.h2,h3,h4,h5,h6').filter('[id]').each(function () {
         $(this).html($(this).text()+'&nbsp;&nbsp;&nbsp;<a href="#'+$(this).attr('id')+'">¶</a>');

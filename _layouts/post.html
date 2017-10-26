@@ -37,8 +37,7 @@ layout: default
 
   <!-- SIGNUP FORM -->
   <div class="signup-form">
-    <h2>Get posts like these delivered to our inbox</h2>
-    <p><i>Sign Up to my newsletter to stay updated with my anecdotes on python, elasticsearch, javascript and other technologies.</i></p>
+    {% include scrapybook.html %}
     <div class="input-form">
       <form action="https://feedburner.google.com/fb/a/mailverify"
           method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=kirankoduru', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">

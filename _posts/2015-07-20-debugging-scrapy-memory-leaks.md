@@ -41,5 +41,3 @@ Selector                           14   oldest:   5s ago
 Clearly, the issue is with one of my `Request` objects. Quickly going back to my code I saw that I used `yield Request` a lot which caused many objects to be created in memory. 
 
 Tell me how you solved your memory leaks with Scrapy in the comments below or post a question below if you would like help debugging your spiders.
-
-{% include scrapybook.html %}
