@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "7 shortcuts of a highly effective Sublime Text user"
-date:   2017-07-03 16:08:47
+date:   2017-10-24 11:08:00
 categories: python
 description : Start using sublime text like a ninja, well sort-of.
 author: Kiran Koduru
