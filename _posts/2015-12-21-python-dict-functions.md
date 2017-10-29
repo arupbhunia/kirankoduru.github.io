@@ -2,9 +2,10 @@
 layout: post
 title:  "Python functions as dictionary values"
 date:   2015-12-21 21:23:23
-updated: 2017-1-24 11:31:11  
+updated: 2017-10-29 02:38:33 
 categories: python
 description : Using python functions with dictionaries
+image: /img/python-functions-as-dict-values.png
 ---
 Pro pythonistas will tell you that you should actually be using python with [higher order functions](http://learnyousomeerlang.com/higher-order-functions) & as [first class functions](https://en.wikipedia.org/wiki/First-class_function). Passing around functions are any programming languages greatest attribute. Here's a trick to making function calls using python dictionaries.
 
