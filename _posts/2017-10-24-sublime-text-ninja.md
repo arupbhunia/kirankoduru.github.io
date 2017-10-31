@@ -2,6 +2,7 @@
 layout: post
 title:  "7 shortcuts of a highly effective Sublime Text user"
 date:   2017-10-24 11:08:00
+updated: 2017-10-31 12:04:45
 categories: python
 description : Start using sublime text like a ninja, well sort-of.
 author: Kiran Koduru
@@ -50,6 +51,10 @@ Authors, bloggers, tech writers and programmers interact with text for documenta
 
 Hit function `F6` to toggle spell check in Sublime Text.
 
+### Do Anything [BONUS]
+
+Added bonus from reddit user [/u/LightShadow](https://www.reddit.com/r/Python/comments/78gkgn/7_shortcuts_of_a_highly_effective_sublime_text/dotnitp/). You can do literally anything by hitting `Ctrl + Shift + P`. This opens the command pallete or a autocomplete like dialog that allows you to type or do anything in Sublime Text.
+
 ### Useful packages to install
 
 Working as a python developer, I have found the following Sublime Text plugins the most useful.
@@ -69,5 +74,7 @@ Here's the summary of shortcut keys if you prefer to print it out this section a
 |Goto line number|`⌘ + G`|`Ctrl + G`|
 |Multiple cursors|`⌘ + D`|`Ctrl + D`|
 |Spell check|`F6`|`F6`|
+|Do Anything|`Ctrl + Shift + P`|`Ctrl + Shift + P`|
+
 
 __*__ I base this claim on no research evidence, just pure instinct
