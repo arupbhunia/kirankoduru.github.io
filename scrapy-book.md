@@ -73,11 +73,11 @@ When writing a web crawler you are hitting someone else's resource that can affe
 
 From building your API for running Scrapy spiders to deploying a cluster that shares a queue of requests among each other. You will learn to build a cluster that can be deployed with `docker` containers.
 
-<div class="signup-form">
-    <div class="float-left" style="width:23%;padding:4%">
+<div class="signup-form scrapy-book">
+    <div class="float-left image">
         <img src="../img/webscraping-with-python-book.png">
     </div>
-     <div class="float-right" style="width:67%;padding-top:1%;padding-right:2%;text-align: left;">
+     <div class="float-right text">
         <h2>Like what you read about the book so far?</h2>
         <p>Are enthused with the topics on the book? Are looking to build web scrapers at scale? Or do you wish to just receive more anecdotes on python from this blog then please signup to the email list below.</p>
     </div>

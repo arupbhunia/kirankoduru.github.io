@@ -204,3 +204,36 @@ table {
 .float-right{
     float:right;
 }
+
+
+.scrapy-book{
+
+    .image {
+        width:23%;
+        padding:4%;
+
+        @include media-query($on-palm) {
+            width: 100%;
+            padding:0;
+        }
+
+        img {
+            @include media-query($on-palm) {
+                max-width: 75%
+            }
+        }
+    }
+
+    .text{
+        width:67%;
+        padding-top:1%;
+        padding-right:2%;
+        text-align: left;
+
+        @include media-query($on-palm) {
+            width:100%;
+            padding:0;
+            text-align:center;
+        }
+    }
+}
