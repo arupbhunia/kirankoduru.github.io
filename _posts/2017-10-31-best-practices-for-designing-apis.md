@@ -39,7 +39,7 @@ You can be tested on your schema design skills. If picking a NoSQL database make
 
 ### Basic Authentication, Token, HMAC and Authorization
 
-Security is of utmost importance even when you make information public. Your endpoints are the only doors to the outside world. Secure them. Make it impossible for anyone with the right permissions to access this information. You can use [Basic Authentication](https://en.wikipedia.org/wiki/Basic_access_authentication), [Token Authentication](https://auth0.com/learn/token-based-authentication-made-easy/) or [HMAC](https://en.wikipedia.org/wiki/Hash-based_message_authentication_code) to secure your endpoints. There are other kinds of authentications you can look up as well but this could be a starting point. 
+Security is of utmost importance even when you make information public. Your endpoints are the only doors to the outside world. Secure them. Make it impossible for anyone without the right permissions to access this information. You can use [Basic Authentication](https://en.wikipedia.org/wiki/Basic_access_authentication), [Token Authentication](https://auth0.com/learn/token-based-authentication-made-easy/) or [HMAC](https://en.wikipedia.org/wiki/Hash-based_message_authentication_code) to secure your endpoints. There are other kinds of authentications you can look up as well but this could be a starting point. 
 
 You might also want to look into [Roles based access control](https://en.wikipedia.org/wiki/Role-based_access_control). This authorization method allows administrators to have more privileges over the same data than regular users.
 
