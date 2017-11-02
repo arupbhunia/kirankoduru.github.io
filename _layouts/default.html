@@ -26,8 +26,16 @@
     ga('send', 'pageview');
 
     // email
-    $('.input-form input[type="submit"]').click(function(){
-      ga('send', 'event', 'Subscription Form');
+    $('#email-signup-popup .input-form input[type="submit"]').click(function(){
+      ga('send', 'event', 'Subscription Form Modal');
+    });
+    
+    $('.signup-form .input-form input[type="submit"]').click(function(){
+      ga('send', 'event', 'Subscription Form Post');
+    });
+
+    $('.subscribe-form .input-form input[type="submit"]').click(function(){
+      ga('send', 'event', 'Subscription Form Home');
     });
 
     // book
@@ -35,11 +43,13 @@
       ga('send', 'event', 'Scrapy Book');
     });
 
+    $('#email-signup-popup .close-modal').click(function(){
+      ga('send', 'event', 'Subscription Form Modal Closed');
+    });
+
     // add links to headers
     $('.h2,h3,h4,h5,h6').filter('[id]').each(function () {
         $(this).html($(this).text()+'&nbsp;&nbsp;&nbsp;<a href="#'+$(this).attr('id')+'">¶</a>');
     });
-
-
   </script>
 </html>
