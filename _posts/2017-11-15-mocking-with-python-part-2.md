@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Mocking with Python - Part II"
-date:   2017-11-02 00:34:01
+date:   2017-11-15 00:34:01
 categories: python
 description : Learning to mock in python
 author: Kiran Koduru
