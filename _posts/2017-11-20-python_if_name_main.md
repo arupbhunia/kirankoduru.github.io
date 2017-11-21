@@ -5,6 +5,7 @@ date:   2017-11-20 16:12:14
 categories: python
 description : What is if __name__ == '__main__'
 author: Kiran Koduru
+image: /img/python-if-name-main.png
 ---
 
 When you are new to python, you may have noticed that the variables that are widely used in all projects are `__name__`  in conjunction with `__main__`.
