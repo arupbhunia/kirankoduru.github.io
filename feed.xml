@@ -14,7 +14,15 @@ layout: null
     {% for post in site.posts limit:10 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
+        <description>
+        {% if post.image %}
+        <p>
+          <a href="{{ post.url | prepend: site.url }}" title="{{ post.title }}">
+            <![CDATA[<img src="{{ post.image | prepend: site.url }}">]]>
+          </a>
+        </p>
+        {% endif %}
+        {{ post.content | xml_escape }}</description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ post.url | prepend: site.url }}</link>
         <guid isPermaLink="true">{{ post.url | prepend: site.url }}</guid>
