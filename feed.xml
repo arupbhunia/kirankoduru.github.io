@@ -18,7 +18,7 @@ layout: null
         {% if post.image %}
         <p>
           <a href="{{ post.url | prepend: site.url }}" title="{{ post.title }}">
-            <![CDATA[<img src="{{ post.image | prepend: site.url }}">]]>
+            <img src="{{ post.image | prepend: site.url }}">
           </a>
         </p>
         {% endif %}
