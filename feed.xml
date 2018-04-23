@@ -15,6 +15,11 @@ layout: null
     <item>
         <title>{{ post.title | xml_escape }}</title>
         <description>
+        {% if post.image %}
+        &lt;p&gt;
+        &lt;img src="{{ post.image | prepend: site.url }}" width="740"&gt;
+        &lt;/p&gt;
+        {% endif %}
         {{ post.excerpt | xml_escape }}
         &lt;p&gt;
         &lt;a href="{{ post.url | prepend: site.url }}"&gt;Continue Reading...&lt;/a&gt;
