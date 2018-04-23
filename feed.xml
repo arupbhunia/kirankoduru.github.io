@@ -17,7 +17,7 @@ layout: null
         <description>
         {% if post.image %}
         &lt;p&gt;
-        &lt;img src="{{ post.image | prepend: site.url }}" width="740"&gt;
+        &lt;img src="{{ post.image | prepend: site.url }}" width="465"&gt;
         &lt;/p&gt;
         {% endif %}
         {{ post.excerpt | xml_escape }}
