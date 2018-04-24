@@ -5,6 +5,7 @@ date: 2018-04-23 20:28:58
 categories: python
 description : Scheduling python programs to run at regular intervals
 author: Kiran Koduru
+image: /img/periodic-python-program.png
 ---
 
 When I learned to program, one of the things I wanted to do was run tasks, jobs, functions, programs etc. on a periodic basis. On my journey with python I learned that there are multiple techniques to accomplish this. I learned that I could run a program in the background in the command line or run it as a [cron](https://en.wikipedia.org/wiki/Cron). There are also a combination of python packages that are available which can be useful in running background tasks. I will try to walk to some of them during this post. Forewarning, this is a long post so if you would like to put a pin in it and comeback later, I totally understand. I will try and break in down in multiple posts so it's easier to come back to. For beginners to python and Unix I would recommend reading the whole series in order to get an idea of working with periodic tasks in python or Unix environments.
