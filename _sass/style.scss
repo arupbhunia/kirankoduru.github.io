@@ -33,12 +33,17 @@
             padding:2px;
             
             input[type='text']{
-                width:66%;
+                width:91%;
                 margin-top: 1px;
-                float:left;
+                margin-left: 1px;
+                display: block;
+                text-align:center;
             }   
             input[type='submit']{
-                font-size: 10px;
+                display: block;
+                width:98%;
+                text-align:center;
+                font-size: 15px;
                 background:none;
                 border:none;
                 color:#FCFCFC;
@@ -55,7 +60,7 @@
         }
 
         .message{
-            margin-top: 5px;
+            margin: 5px 0;
             font-size: 12px;
             font-family: serif;
         }
@@ -138,8 +143,10 @@
             background: -moz-linear-gradient(top, #0d5fb7, #0d5fb7);
             background: linear-gradient(to bottom, #0d5fb7, #0d5fb7);
         }
+    }
 
-
+    pre {
+        overflow-y: scroll
     }
 }
 
