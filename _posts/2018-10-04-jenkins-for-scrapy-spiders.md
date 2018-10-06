@@ -7,7 +7,7 @@ description : Scheduling python scrapy spiders to run at regular intervals with 
 author: Kiran Koduru
 image: /img/jenkins-scrapy-scheduling.jpg
 ---
-If you haven't figured how to run cron jobs to schedule your scrapy spiders, then I would suggest checking out my [last post]({% post_url 2018-04-23-crons-with-python %}). And if you already figured how you would setup your Jenkins instance to run scrapy spiders then you can stop reading now. But if you would like to read up on how to configure your Jenkins job to pull in your scrapy project from github then please keep reading.
+If you haven't figured how to run cron jobs to schedule your scrapy spiders, then I would suggest checking out my [last post]({{site.url}}{% post_url 2018-04-23-crons-with-python %}). And if you already figured how you would setup your Jenkins instance to run scrapy spiders then you can stop reading now. But if you would like to read up on how to configure your Jenkins job to pull in your scrapy project from github then please keep reading.
 
 #### Downloading and Installing Jenkins
 
