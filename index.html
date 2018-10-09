@@ -49,14 +49,14 @@ layout: default
       </span>
       <span class="arrows">
         {% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path }}" class="previous"><i class="fa fa-caret-left"></i></a>
+          <a href="{{ paginator.previous_page_path }}" class="previous"><i class="fa fa-caret-left"></i>&nbsp;Prev</a>
         {% else %}
-          <span class="previous"><i class="fa fa-caret-left"></i></span>
+          <span class="previous"><i class="fa fa-caret-left"></i>&nbsp;Prev</span>
         {% endif %}
         {% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path }}" class="next"><i class="fa fa-caret-right"></i></a>
+          <a href="{{ paginator.next_page_path }}" class="next">Next&nbsp;<i class="fa fa-caret-right"></i></a>
         {% else %}
-          <span class="next "><i class="fa fa-caret-right"></i></span>
+          <span class="next ">Next&nbsp;<i class="fa fa-caret-right"></i></span>
         {% endif %}
       </span>
     </div>  
