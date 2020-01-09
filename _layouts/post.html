@@ -56,21 +56,3 @@ layout: default
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-<!-- ADD THIS buttons -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54c8670f6cdce83a" async="async"></script>
-
-<!-- EMAIL POPUP -->
-<script type="text/javascript">
-  var cookieName = 'kirankodurugithubiopopup',
-      cookieVal = 'set';
-
-  function showModal(){
-    $('#email-signup-popup').modal();
-  };
-
-  if (Cookies.get(cookieName) != cookieVal){
-    Cookies.set(cookieName, cookieVal, { expires: 7 });
-    setTimeout(showModal, 30000);
-  }
-</script>

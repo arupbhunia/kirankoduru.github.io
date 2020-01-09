@@ -16,40 +16,4 @@
     {% include footer.html %}
 
   </body>
-  <script>
-    // ganalytics
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-13022600-6', 'auto');
-    ga('send', 'pageview');
-
-    // email
-    $('#email-signup-popup .input-form input[type="submit"]').click(function(){
-      ga('send', 'event', 'Subscription Form Modal');
-    });
-    
-    $('.signup-form .input-form input[type="submit"]').click(function(){
-      ga('send', 'event', 'Subscription Form Post');
-    });
-
-    $('.subscribe-form .input-form input[type="submit"]').click(function(){
-      ga('send', 'event', 'Subscription Form Home');
-    });
-
-    // book
-    $('.scrapy-book a').click(function(){
-      ga('send', 'event', 'Scrapy Book');
-    });
-
-    $('#email-signup-popup .close-modal').click(function(){
-      ga('send', 'event', 'Subscription Form Modal Closed');
-    });
-
-    // add links to headers
-    $('.h2,h3,h4,h5,h6').filter('[id]').each(function () {
-        $(this).html($(this).text()+'&nbsp;&nbsp;&nbsp;<a href="#'+$(this).attr('id')+'">¶</a>');
-    });
-  </script>
 </html>
